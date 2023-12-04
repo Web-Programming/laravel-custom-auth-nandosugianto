@@ -40,6 +40,7 @@ class ProdiPolicy
     {
         //
         return $user->level == 'admin';
+        // comment
     }
 
     /**
