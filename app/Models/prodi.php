@@ -7,8 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Prodi extends Model
 {
-    public function mahasiswas()
-    {
+    use HasFactory;
+
+    // Cara menghubungkan tabel prodis dengan mahasisswas
+    public function mahasiswa(){
         return $this->hasMany('App\Models\Mahasiswa');
     }
 }
